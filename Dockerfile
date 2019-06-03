@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install wget unzip sudo && apt-get clean
 RUN useradd kerman && mkdir -p /home/kerman
 
 WORKDIR /home/kerman
-RUN wget https://d-mp.org/downloads/release/latest/DMPServer.zip && unzip DMPServer.zip && rm DMPServer.zip
+RUN wget https://d-mp.org/builds/release/v0.3.3.0/DMPServer.zip && unzip DMPServer.zip && rm DMPServer.zip
 
 #change file owner
 RUN mkdir /home/kerman/DMPServer/Universe
